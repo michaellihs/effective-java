@@ -1,6 +1,6 @@
 package ch.lihsmi.effectivejava.chapter1.item2;
 
-public class Product {
+public class ProductWithManyConstructorParameters {
 
     private final String attribute1;
 
@@ -8,34 +8,40 @@ public class Product {
 
     private final String attribute3;
 
-    public static class Builder {
+    public static class ProductBuilder implements Builder<ProductWithManyConstructorParameters> {
 
         private final String attribute1;
 
+        // assign default values to optional attributes
         private String attribute2 = null;
 
         private String attribute3 = null;
 
-        public Builder(String attribute1) {
+        // set reuquired attributes in constructor
+        public ProductBuilder(String attribute1) {
             this.attribute1 = attribute1;
         }
 
-        public Builder withAttribute2(String attribute2) {
+        public ProductBuilder withAttribute2(String attribute2) {
             this.attribute2 = attribute2;
             return this;
         }
 
-        public Builder withAttribute3(String attribute3) {
+        public ProductBuilder withAttribute3(String attribute3) {
             this.attribute3 = attribute3;
             return this;
         }
 
-        public Product build() {
-            return new Product(this);
+        @Override
+        public ProductWithManyConstructorParameters build() {
+            return new ProductWithManyConstructorParameters(this);
         }
+
     }
 
-    private Product(Builder builder) {
+    // make constructor private and use builder as parameter
+    private ProductWithManyConstructorParameters(ProductBuilder builder) {
+        // inner class enables access to private properties
         attribute1 = builder.attribute1;
         attribute2 = builder.attribute2;
         attribute3 = builder.attribute3;
