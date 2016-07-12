@@ -1,7 +1,7 @@
 package ch.lihsmi.effectivejava.chapter1.item1;
 
 /**
- * Factories are not required to return a new object instance every time they are invoked
+ * Factories are not required to return a new object INSTANCE every time they are invoked
  *
  * - Allows immutable classes
  * - Allows singleton instances
