@@ -17,6 +17,8 @@ Table of Contents
 | Item 3: [Singleton with Static Factory](src/main/java/ch/lihsmi/effectivejava/chapter1/item3/SingletonWithStaticFactory.java) | Implement a Singleton using a Static Factory Method |
 | Item 3: [Singleton with Enum](src/main/java/ch/lihsmi/effectivejava/chapter1/item3/SingletonWithEnum.java) | Implement a Singleton using an Enum |
 | Item 4: [Non-Instantiable Classes](src/main/java/ch/lihsmi/effectivejava/chapter1/item4/NoninstantiableUtilityClass.java) | Prevent classes from being instantiated with private constructor |
+| Item 5: [Unnecessary Objects](src/main/java/ch/lihsmi/effectivejava/chapter1/item5/UnnecessaryObjects.java) | Avoid creation of unnecessary objects |
+| Item 6: [Obsolete Object References](src/main/java/ch/lihsmi/effectivejava/chapter1/item6/MemoryEffectiveStack.java) | Eliminate obsolete Object References |
 
 
 Run the tests
