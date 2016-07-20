@@ -19,6 +19,7 @@ Table of Contents
 | Item 4: [Non-Instantiable Classes](src/main/java/ch/lihsmi/effectivejava/chapter1/item4/NoninstantiableUtilityClass.java) | Prevent classes from being instantiated with private constructor |
 | Item 5: [Unnecessary Objects](src/main/java/ch/lihsmi/effectivejava/chapter1/item5/UnnecessaryObjects.java) | Avoid creation of unnecessary objects |
 | Item 6: [Obsolete Object References](src/main/java/ch/lihsmi/effectivejava/chapter1/item6/MemoryEffectiveStack.java) | Eliminate obsolete Object References |
+| Item 7: [Avoid Finalizers](src/main/java/ch/lihsmi/effectivejava/chapter1/item7/ExplicitTermination.java) | Use explicit Termination instead of Finalizers |
 
 
 Run the tests
