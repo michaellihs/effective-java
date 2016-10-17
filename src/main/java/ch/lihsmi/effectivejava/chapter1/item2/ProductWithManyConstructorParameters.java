@@ -8,6 +8,10 @@ public class ProductWithManyConstructorParameters {
 
     private final String attribute3;
 
+    public static ProductBuilder builder(String attribute1) {
+        return new ProductBuilder(attribute1);
+    }
+
     public static class ProductBuilder implements Builder<ProductWithManyConstructorParameters> {
 
         private final String attribute1;
@@ -18,7 +22,7 @@ public class ProductWithManyConstructorParameters {
         private String attribute3 = null;
 
         // set reuquired attributes in constructor
-        public ProductBuilder(String attribute1) {
+        private ProductBuilder(String attribute1) {
             this.attribute1 = attribute1;
         }
 
