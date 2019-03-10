@@ -21,7 +21,7 @@ public class ProductWithManyConstructorParameters {
 
         private String attribute3 = null;
 
-        // set reuquired attributes in constructor
+        // set required attributes in constructor
         private ProductBuilder(String attribute1) {
             this.attribute1 = attribute1;
         }
